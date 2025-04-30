@@ -158,3 +158,6 @@ main {
     padding: 15px;
   }
 }
+img {
+  background: transparent !important;
+}
