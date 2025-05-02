@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuriculoQI - Auriculoterapia Itinerante em Sorocaba</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Nunito', sans-serif;
+            color: #333;
+            background-color: #ffffff;
+            scroll-behavior: smooth;
+        }
+        
+        .gold-btn {
+            background-color: #D4AF37;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .gold-btn:hover {
+            background-color: #c2a030;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .beige-bg {
+            background-color: #F5F5DC;
+        }
+        
+        .testimonial-card {
+            min-width: 300px;
+            scroll-snap-align: start;
+        }
+        
+        .testimonial-container {
+            scroll-snap-type: x mandatory;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #D4AF37;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .active::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="qin.png" alt="Qin mascote" class="h-12 w-12 rounded-full mr-3">
+                <h1 class="text-xl font-bold text-gray-800">Auriculo<span class="text-[#D4AF37]">QI</span></h1>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-8">
+                    <li><a href="#inicio" class="nav-link active text-gray-700 hover:text-[#D4AF37]">Início</a></li>
+                    <li><a href="#auriculoterapia" class="nav-link text-gray-700 hover:text-[#D4AF37]">Auriculoterapia</a></li>
+                    <li><a href="#beneficios" class="nav-link text-gray-700 hover:text-[#D4AF37]">Benefícios</a></li>
+                    <li><a href="#planos" class="nav-link text-gray-700 hover:text-[#D4AF37]">Planos</a></li>
+                    <li><a href="#contato" class="nav-link text-gray-700 hover:text-[#D4AF37]">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="md:hidden text-gray-700">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-24 pb-16 md:pt-32 md:pb-24 beige-bg">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-6 leading-tight">
+                    Cuidando do seu <span class="text-[#D4AF37]">equilíbrio</span> de forma natural.
+                </h2>
+                <p class="text-lg text-gray-600 mb-8">
+                    Auriculoterapia itinerante em Sorocaba para trazer bem-estar e harmonia ao seu dia a dia.
+                </p>
+                <a href="https://wa.me/5515997563615" target="_blank" class="gold-btn px-8 py-3 rounded-full font-semibold inline-block">
+                    <i class="fab fa-whatsapp mr-2"></i> Agendar Sessão
+                </a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://via.placeholder.com/400x400" alt="Mascote Qin" class="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Auriculoterapia Section -->
+    <section id="auriculoterapia" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Auriculoterapia</h2>
+                <div class="w-20 h-1 bg-[#D4AF37] mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-10">
+                    <img src="https://via.placeholder.com/500x350" alt="Auriculoterapia" class="rounded-lg shadow-md w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <div class="flex items-start mb-6">
+                        <div class="text-[#D4AF37] text-2xl mr-4">
+                            <i class="fas fa-ear"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">O que é Auriculoterapia?</h3>
+                            <p class="text-gray-600">
+                                A auriculoterapia é uma técnica da medicina tradicional chinesa que estimula pontos específicos da orelha para promover o equilíbrio energético do corpo. Através de sementes, cristais ou agulhas, podemos tratar diversas condições de saúde de forma natural e não invasiva.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start mb-6">
+                        <div class="text-[#D4AF37] text-2xl mr-4">
+                            <i class="fas fa-history"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">História e Eficácia</h3>
+                            <p class="text-gray-600">
+                                Com mais de 2.000 anos de história, a auriculoterapia foi reconhecida pela Organização Mundial da Saúde (OMS) como uma terapia complementar eficaz. A orelha funciona como um microssistema que reflete todo o corpo humano, permitindo tratar desequilíbrios de forma holística.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="text-[#D4AF37] text-2xl mr-4">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Como Funciona?</h3>
+                            <p class="text-gray-600">
+                                Durante a sessão, são identificados os pontos que correspondem às áreas do corpo que necessitam de equilíbrio. A estimulação desses pontos promove a liberação de endorfinas, melhora a circulação energética e ajuda o organismo a encontrar seu equilíbrio natural.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios Section -->
+    <section id="beneficios" class="py-16 beige-bg">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Benefícios</h2>
+                <div class="w-20 h-1 bg-[#D4AF37] mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="text-[#D4AF37] text-3xl mb-4">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Ansiedade</h3>
+                    <p class="text-gray-600">
+                        Reduz os níveis de estresse e ansiedade, promovendo sensação de calma e bem-estar através da estimulação de pontos específicos.
+                    </p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="text-[#D4AF37] text-3xl mb-4">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Insônia</h3>
+                    <p class="text-gray-600">
+                        Ajuda a regular o ciclo do sono, combatendo a insônia e melhorando a qualidade do descanso noturno de forma natural.
+                    </p>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="text-[#D4AF37] text-3xl mb-4">
+                        <i class="fas fa-bone"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Dores no Corpo</h3>
+                    <p class="text-gray-600">
+                        Alivia dores musculares, articulares e de cabeça através da liberação de endorfinas e melhora da circulação energética.
+                    </p>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="text-[#D4AF37] text-3xl mb-4">
+                        <i class="fas fa-weight"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Emagrecimento Natural</h3>
+                    <p class="text-gray-600">
+                        Auxilia no controle da ansiedade alimentar, acelera o metabolismo e promove saciedade, complementando processos de emagrecimento.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planos Section -->
+    
+<section id="planos" class="py-16">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Tabela de Serviços</h2>
+            <div class="w-20 h-1 bg-[#D4AF37] mx-auto"></div>
+            <p class="text-gray-600 mt-2">@AuriculoQI – Atendimento personalizado em Sorocaba</p>
+        </div>
+        <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+            <!-- Sessão Avulsa -->
+            <div class="bg-white p-6 rounded-lg shadow-lg border border-[#F5F5DC]">
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Sessão Avulsa</h3>
+                <p class="text-gray-600 mb-2">R$ 40</p>
+                <p class="text-gray-600 mb-4 text-sm">Atendimento individual com pontos específicos conforme sua necessidade.</p>
+                <a href="https://wa.me/5515997563615?text=Olá! Quero agendar uma sessão avulsa de R$40." target="_blank" class="gold-btn px-6 py-2 rounded-full font-semibold inline-block w-full text-center">Agendar</a>
+            </div>
+
+            <!-- Pacote Mensal -->
+            <div class="bg-white p-6 rounded-lg shadow-lg border border-[#F5F5DC]">
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Pacote Mensal (4 sessões)</h3>
+                <p class="text-gray-600 mb-2">R$ 140</p>
+                <p class="text-gray-600 mb-4 text-sm">Ideal para tratamento contínuo e acompanhamento semanal.</p>
+                <a href="https://wa.me/5515997563615?text=Olá! Quero agendar o pacote mensal de 4 sessões por R$140." target="_blank" class="gold-btn px-6 py-2 rounded-full font-semibold inline-block w-full text-center">Agendar</a>
+            </div>
+
+            <!-- Combo Alívio Emocional -->
+            <div class="bg-white p-6 rounded-lg shadow-lg border border-[#F5F5DC]">
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Combo Alívio Emocional</h3>
+                <p class="text-gray-600 mb-2">R$ 95</p>
+                <p class="text-gray-600 mb-4 text-sm">2 sessões + suporte no WhatsApp + sugestão de floral para ansiedade, insônia ou estresse.</p>
+                <a href="https://wa.me/5515997563615?text=Olá! Quero o Combo Alívio Emocional por R$95." target="_blank" class="gold-btn px-6 py-2 rounded-full font-semibold inline-block w-full text-center">Agendar</a>
+            </div>
+
+            <!-- Sessão Dupla -->
+            <div class="bg-white p-6 rounded-lg shadow-lg border border-[#F5F5DC]">
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Sessão Dupla</h3>
+                <p class="text-gray-600 mb-2">R$ 70 (2 pessoas)</p>
+                <p class="text-gray-600 mb-4 text-sm">Atendimento para 2 pessoas no mesmo local, com protocolos individuais.</p>
+                <a href="https://wa.me/5515997563615?text=Olá! Quero agendar uma sessão dupla por R$70." target="_blank" class="gold-btn px-6 py-2 rounded-full font-semibold inline-block w-full text-center">Agendar</a>
+            </div>
+
+            <!-- Promoção de Indicação -->
+            <div class="bg-white p-6 rounded-lg shadow-lg border border-[#F5F5DC] col-span-full">
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Promoção de Indicação</h3>
+                <p class="text-gray-600 mb-2">Indique alguém e ganhe R$10 de desconto na próxima sessão!</p>
+                <p class="text-gray-600 text-sm">Válido para cada pessoa que você indicar e efetivar agendamento.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Horários e Agendamento -->
+    <section id="contato" class="py-16 beige-bg">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Horários de Atendimento</h2>
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-calendar-day text-[#D4AF37] mr-3 text-xl"></i>
+                                <span class="font-semibold">Segunda a Sábado</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-clock text-[#D4AF37] mr-3 text-xl"></i>
+                                <span class="font-semibold">Das 9h às 18h</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Entre em Contato</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-phone-alt text-[#D4AF37] mr-3"></i>
+                                <a href="https://wa.me/5515997563615" target="_blank" class="text-gray-700 hover:text-[#D4AF37]">(15) 99756-3615</a>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fab fa-instagram text-[#D4AF37] mr-3"></i>
+                                <a href="https://instagram.com/AuriculoQI" target="_blank" class="text-gray-700 hover:text-[#D4AF37]">@AuriculoQI</a>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-map-marker-alt text-[#D4AF37] mr-3"></i>
+                                <span class="text-gray-700">Sorocaba - SP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Agende sua Sessão</h2>
+                    <form class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="mb-4">
+                            <label for="nome" class="block text-gray-700 font-medium mb-2">Nome Completo</label>
+                            <input type="text" id="nome" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D4AF37]">
+                        </div>
+                        <div class="mb-4">
+                            <label for="telefone" class="block text-gray-700 font-medium mb-2">Telefone</label>
+                            <input type="tel" id="telefone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D4AF37]">
+                        </div>
+                        <div class="mb-4">
+                            <label for="data" class="block text-gray-700 font-medium mb-2">Data Preferencial</label>
+                            <input type="date" id="data" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D4AF37]">
+                        </div>
+                        <div class="mb-6">
+                            <label for="horario" class="block text-gray-700 font-medium mb-2">Horário Preferencial</label>
+                            <select id="horario" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D4AF37]">
+                                <option value="">Selecione um horário</option>
+                                <option value="09:00">09:00</option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:00">11:00</option>
+                                <option value="12:00">12:00</option>
+                                <option value="13:00">13:00</option>
+                                <option value="14:00">14:00</option>
+                                <option value="15:00">15:00</option>
+                                <option value="16:00">16:00</option>
+                                <option value="17:00">17:00</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="gold-btn px-6 py-3 rounded-full font-semibold w-full">
+                            <i class="far fa-calendar-check mr-2"></i> Solicitar Agendamento
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Depoimentos</h2>
+                <div class="w-20 h-1 bg-[#D4AF37] mx-auto"></div>
+            </div>
+            
+            <div class="relative">
+                <div class="testimonial-container overflow-x-auto flex space-x-6 pb-8 px-2 scrollbar-hide">
+                    <!-- Depoimento 1 -->
+                    <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <img src="https://via.placeholder.com/50" alt="Cliente" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Ana Clara</h4>
+                                <div class="flex text-[#D4AF37]">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">
+                            "As sessões de auriculoterapia mudaram minha vida! Minha ansiedade diminuiu significativamente e finalmente consigo dormir melhor. O atendimento em casa é um diferencial incrível!"
+                        </p>
+                    </div>
+                    
+                    <!-- Depoimento 2 -->
+                    <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <img src="https://via.placeholder.com/50" alt="Cliente" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Carlos Eduardo</h4>
+                                <div class="flex text-[#D4AF37]">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">
+                            "Sofria com dores crônicas nas costas há anos. Depois de 3 sessões já senti uma melhora impressionante. A profissionalismo e cuidado da AuriculoQI são excepcionais."
+                        </p>
+                    </div>
+                    
+                    <!-- Depoimento 3 -->
+                    <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <img src="https://via.placeholder.com/50" alt="Cliente" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Mariana Santos</h4>
+                                <div class="flex text-[#D4AF37]">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">
+                            "Adquiri o pacote de 4 sessões e valeu cada centavo! Além de ajudar no controle da minha ansiedade, percebi uma melhora no meu foco e disposição no dia a dia."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+</html>
